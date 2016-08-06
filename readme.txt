@@ -12,7 +12,7 @@ This plugin in a multisite installation shows the ID od the current site/blog
 
 == Description ==
 
-This is the long description.  No limit, and you can use Markdown (as well as in the following sections).
+This plugin in a multisite installation shows the ID od the current site/blog
 
 == Installation ==
 

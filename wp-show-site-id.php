@@ -13,3 +13,7 @@
  * Domain Path: /languages/
  *
  */
+
+require_once('class.wp-show-site-id.php');
+WP_Show_Site_ID();
+
