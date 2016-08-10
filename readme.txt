@@ -1,18 +1,19 @@
 === Plugin Name ===
 Contributors: kreamweb
 Donate link: http://wpmoon.com/
-Tags: multisite, site id, admin site id
+Tags: multisite, site id, admin site id, wpmu, networks
 Requires at least: 4.0
 Tested up to: 4.3
 Stable tag: 4.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This plugin in a multisite installation shows the ID od the current site/blog
+This plugin in a multisite installation shows the ID of the current site/blog
 
 == Description ==
 
-This plugin in a multisite installation shows the ID od the current site/blog
+This plugin in a multisite installation shows the ID of the current site/blog in the admin bar menu. The ID of the current site/blog is linked to the site info page.
+It can be installed only in a multisite.
 
 == Installation ==
 
@@ -22,5 +23,5 @@ This plugin in a multisite installation shows the ID od the current site/blog
 
 == Changelog ==
 
-= 0.5 =
+= 1.0.0 =
 * Init
