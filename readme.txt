@@ -1,10 +1,10 @@
 === Plugin Name ===
 Contributors: kreamweb
-Donate link: http://wpmoon.com/
+Donate link: https://paypal.me/pools/c/85ErI7sdcf
 Tags: multisite, site id, admin site id, wpmu, networks
 Requires at least: 4.0
-Tested up to: 4.3
-Stable tag: 4.3
+Tested up to: 4.9.6
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,6 +22,8 @@ It can be installed only in a multisite.
 
 
 == Changelog ==
+= 1.0.1 =
+* Tested with 4.9.6
 
 = 1.0.0 =
 * Init

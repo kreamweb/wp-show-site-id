@@ -3,20 +3,20 @@
  * Plugin Name: Wp Show Site ID
  * Plugin URI: https://wpmoon.com/
  * Description: This plugin in a multisite installation shows the ID od the current site/blog
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Kreamweb
- * Author URI: https://kreamweb.com
+ * Author URI: https://mukkamu.com
  * Requires at least: 4.4
- * Tested up to: 4.5
+ * Tested up to: 4.9.6
  *
  * Text Domain: wp-show-site-id
  * Domain Path: /languages/
  *
  */
 
-define( 'WP_SHOW_SITE_ID_START_VERSION', '0.0.1'  );
+
 if ( ! defined( 'WP_SHOW_SITE_ID_START_VERSION' ) ) {
-	define( 'WP_SHOW_SITE_ID_START_VERSION', '1.0.0' );
+	define( 'WP_SHOW_SITE_ID_START_VERSION', '1.0.1' );
 }
 
 
