@@ -22,7 +22,7 @@ if ( ! class_exists( 'WP_Show_Site_ID' ) ) {
 		/**
 		 * Returns single instance of the class
 		 *
-		 * @return \YITH_WC_Dynamic_Discounts
+		 * @return \WP_Show_Site_ID
 		 * @since 1.0.0
 		 */
 		public static function get_instance() {
@@ -45,6 +45,20 @@ if ( ! class_exists( 'WP_Show_Site_ID' ) ) {
 			}
 
 			add_action( 'admin_bar_menu', array( $this, 'add_toolbar_items' ), 100 );
+
+			//add the column EAN on product list
+			add_filter( 'manage_sites-network_columns', array( $this, 'manage_sites_columns' ), 20 );
+			add_action( 'manage_sites_custom_column', array( $this, 'show_site_id' ), 10, 2 );
+			add_action( 'admin_print_styles', array( $this, 'custom_style' ) );
+		}
+
+
+		function custom_style(){
+
+		    if( 'sites-network' == get_current_screen()->id )
+		    ?>
+            <style type="text/css"> th#ec_site_id { width: 3.5em; }</style>
+            <?php
 		}
 
 		/**
@@ -74,7 +88,7 @@ if ( ! class_exists( 'WP_Show_Site_ID' ) ) {
 
 		/**
 		 * Show an error after the plugin activation if the installation
-		 * of Wordpress is not a multisite.
+		 * of Wordpress is not a multi site.
 		 * It is the callback of 'admin_notices'
 		 *
 		 * @return void
@@ -89,6 +103,36 @@ if ( ! class_exists( 'WP_Show_Site_ID' ) ) {
 				</p>
 			</div>
 			<?php
+		}
+
+		/**
+		 * Add the column ID inside the site list table.
+         *
+         * wp-admin/network/sites.php
+		 *
+		 * @param $columns
+		 *
+		 * @return array
+         * @since 1.0.2
+		 */
+		public function manage_sites_columns( $columns ) {
+
+			$columns = array_slice ( $columns, 0, 1, true ) + array( 'ec_site_id' => __('Site ID', 'wp-show-site-id') ) + array_slice ( $columns, 1, count ( $columns ) - 1, true );
+
+			return $columns;
+		}
+
+		/**
+		 * Show the GTIN code inside the product list.
+		 *
+		 * @param $column
+		 * @return void
+		 * @since 1.0.2
+		 */
+		public function show_site_id( $column, $blog_id ) {
+			if ( 'ec_site_id' == $column ) {
+				echo esc_html( $blog_id );
+			}
 		}
 	}
 }

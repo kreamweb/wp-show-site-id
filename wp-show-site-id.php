@@ -1,13 +1,13 @@
 <?php
 /**
  * Plugin Name: Wp Show Site ID
- * Plugin URI: https://wpmoon.com/
+ * Plugin URI: https://emanuelacastorina.com/
  * Description: This plugin in a multisite installation shows the ID od the current site/blog
- * Version: 1.0.1
- * Author: Kreamweb
- * Author URI: https://mukkamu.com
+ * Version: 1.0.2
+ * Author: Emanuela Castorina
+ * Author URI: https://emanuelacastorina.com/
  * Requires at least: 4.4
- * Tested up to: 4.9.6
+ * Tested up to: 4.9.8
  *
  * Text Domain: wp-show-site-id
  * Domain Path: /languages/
@@ -16,7 +16,7 @@
 
 
 if ( ! defined( 'WP_SHOW_SITE_ID_START_VERSION' ) ) {
-	define( 'WP_SHOW_SITE_ID_START_VERSION', '1.0.1' );
+	define( 'WP_SHOW_SITE_ID_START_VERSION', '1.0.2' );
 }
 
 
