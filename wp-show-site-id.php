@@ -30,6 +30,7 @@ if ( ! function_exists( 'wp_show_site_id_start' ) ) {
 	function wp_show_site_id_start() {
 
 		require_once( 'class.wp-show-site-id.php' );
+		load_plugin_textdomain( 'wp-show-site-id', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 		WP_Show_Site_ID();
 	}
 }

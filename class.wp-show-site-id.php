@@ -123,7 +123,7 @@ if ( ! class_exists( 'WP_Show_Site_ID' ) ) {
 		}
 
 		/**
-		 * Show the GTIN code inside the product list.
+		 * Show the site id value in the Site List Table
 		 *
 		 * @param $column
 		 * @return void
@@ -134,6 +134,7 @@ if ( ! class_exists( 'WP_Show_Site_ID' ) ) {
 				echo esc_html( $blog_id );
 			}
 		}
+
 	}
 }
 
