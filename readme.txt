@@ -9,13 +9,13 @@ Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This plugin in a multi site installation shows the ID of the current site/blog
+This plugin in a multisite installation shows the ID of the current site/blog.
 
 == Description ==
 
-This plugin in a multi site installation shows the ID of the current site/blog in the admin bar menu. The ID of the current site/blog is linked to the site info page.
+This plugin in a multisite installation shows the ID of the current site/blog in the admin bar menu. The ID of the current site/blog is linked to the site info page.
 It adds also a custom column with site id information inside the sites list table.
-It can be installed only in a multi site.
+It can be installed only on a multisite.
 
 == Installation ==
 

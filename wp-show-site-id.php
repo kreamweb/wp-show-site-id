@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Wp Show Site ID
  * Plugin URI: https://emanuelacastorina.com/
- * Description: This plugin in a multisite installation shows the ID od the current site/blog
+ * Description: This plugin in a multisite installation shows the ID of the current site/blog.
  * Version: 1.0.2
  * Author: Emanuela Castorina
  * Author URI: https://emanuelacastorina.com/
